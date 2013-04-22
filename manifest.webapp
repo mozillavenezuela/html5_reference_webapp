@@ -1,0 +1,33 @@
+{
+  "version": "0.1",
+  "name": "HTML",
+  "description": "HTML Reference",
+  "launch_path": "/index.html",
+  "icons": {
+    "16": "/img/icons/mortar-16.png",
+    "48": "/img/icons/mortar-48.png",
+    "128": "/img/icons/mortar-128.png"
+  },
+  "developer": {
+    "name": "Droid2Fox",
+    "url": "https://github.com/Droid2Fox/html_Reference"
+  },
+  "installs_allowed_from": ["*"],
+  "orientation": ["portrait"],
+  "appcache_path": "/cache.manifest",
+  "locales": {
+    "es": {
+      "description": "HTML Reference",
+      "developer": {
+        "url": "https://github.com/Droid2Fox/html_Reference"
+      }
+    },
+    "en": {
+      "description": "HTML Reference",
+      "developer": {
+        "url": "https://github.com/Droid2Fox/html_Reference"
+      }
+    }
+  },
+  "default_locale": "en"
+}
