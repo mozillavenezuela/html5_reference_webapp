@@ -1,134 +1,346 @@
-<!DOCTYPE html> 
-<html lang='en'> 
-<head> 
-	<title>HTML Reference</title>
-	<meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
-	<link rel="stylesheet" href="css/app.css" />	
-</head> 
-<body> 
-
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Referencias para HTML5</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
 <div data-role="page" id="home">
-
-	<div data-role="header">
-		<h1>HTML5</h1>
-	</div><!-- /header -->
-
-	<div data-role="content">	
-		<ul data-role="listview">
-			<li><a href="#html5">Introducción</a></li>
-			<li><a href="#newElements">Nuevos Elementos</a></li>
-			<li><a href="#canvas">Canvas</a></li>
-			<li><a href="#dragDrop">Arrastrar y Soltar</a></li>
-			<li><a href="#svg">SVG</a></li>
-            <li><a href="#geolocation">Geolocalización</a></li>
-            <li><a href="#webStorage">Almacenamiento Web</a></li>
-            <li><a href="#webWorkers">Web Workers</a></li>
-            <li><a href="#sse">SSE</a></li>
-		</ul>
-	</div><!-- /content -->
-
-</div><!-- /page -->
-
-<div data-role="page" id="html5">
-	<div data-role="header">
-		<h1>HTML5</h1>
-		<a href="#home">Atrás</a>
-	</div><!-- /header -->
-	<div data-role="content">	
-		<p>HTML5</p>		
-	</div><!-- /content -->
-</div><!-- /page -->
-
-<div data-role="page" id="newElements">
-	<div data-role="header">
-		<h1>Audio</h1>
-		<a href="#home">Atrás</a>
-	</div><!-- /header -->
-	<div data-role="content">	
-		<ul data-role="listview">
-			<li><a href="#">play</a></li>
-			<li><a href="#">stop</a></li>			
-		</ul>		
-	</div><!-- /content -->
-</div><!-- /page -->
-
-<div data-role="page" id="canvas">
-	<div data-role="header">
-		<h1>Canvas</h1>
-		<a href="#home">Atrás</a>
-	</div><!-- /header -->
-	<div data-role="content">	
-		<canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3c3;">
-		Your browser does not support the HTML5 canvas tag.
-		</canvas>		
-	</div><!-- /content -->
-</div><!-- /page -->
-
-<div data-role="page" id="dragDrop">
-	<div data-role="header">
-    <h1>Arrastar y Soltar</h1>
-    <a href="#home">Atrás</a>
+    <div data-role="header">
+        <h1>HTML5</h1>
     </div>
     <div data-role="content">
-    <p>"Neque porro quisquam est qui dolorem 
-     ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+        <ul data-role="listview">
+            <li><a href="#html5">Introducción</a></li>
+            <li><a href="#semantica">Semántica</a></li>
+            <li><a href="#Dstorage">DOM Storage</a></li>
+            <li><a href="#Conectividad">Conectividad</a></li>
+            <li><a href="#Multimedia">Multimedia</a></li>
+            <li><a href="#Graphics">Graficos 3D y Efectos</a></li>
+            <li><a href="#Performance">Performance e Integración</a></li>
+            <li><a href="#Dispositivos">Dispositivos</a></li>
+            <li><a href="#Css3">Css 3</a></li>
+        </ul>
+    </div>
+</div>
+
+<div data-role="page" id="html5">
+    <div data-role="header">
+        <h1>Introducción</h1>
+        <a href="#home">Atrás</a>
+    </div>
+    <div data-role="content">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <polygon fill="#E44D26" points="107.644,470.877 74.633,100.62 437.367,100.62 404.321,470.819 255.778,512          "/>
+            <polygon fill="#F16529" points="256,480.523 376.03,447.246 404.27,130.894 256,130.894             "/>
+            <polygon fill="#EBEBEB" points="256,268.217 195.91,268.217 191.76,221.716 256,221.716 256,176.305 255.843,176.305 142.132,176.305 143.219,188.488 154.38,313.627 256,313.627"/>
+            <polygon fill="#EBEBEB" points="256,386.153 255.801,386.206 205.227,372.55 201.994,336.333 177.419,336.333 156.409,336.333 162.771,407.634 255.791,433.457 256,433.399"/>
+            <path d="M108.382,0h23.077v22.8h21.11V0h23.078v69.044H152.57v-23.12h-21.11v23.12h-23.077V0z"/>
+            <path d="M205.994,22.896h-20.316V0h63.72v22.896h-20.325v46.148h-23.078V22.896z"/>
+            <path d="M259.511,0h24.063l14.802,24.26L313.163,0h24.072v69.044h-22.982V34.822l-15.877,24.549h-0.397l-15.888-24.549v34.222h-22.58V0z"/>
+            <path d="M348.72,0h23.084v46.222h32.453v22.822H348.72V0z"/>
+            <polygon fill="#FFFFFF" points="255.843,268.217 255.843,313.627 311.761,313.627 306.49,372.521 255.843,386.191 255.843,433.435 348.937,407.634 349.62,399.962 360.291,280.411 361.399,268.217 349.162,268.217"/>
+            <polygon fill="#FFFFFF" points="255.843,176.305 255.843,204.509 255.843,221.605 255.843,221.716 365.385,221.716 365.385,221.716 365.531,221.716 366.442,211.509 368.511,188.488 369.597,176.305"/>
+        </svg>
+        <p>HTML5 es la última evolución en el estándar que define HTML. Aunque el borrador de especificación de HTML5 está sujeto a cambios y no está finalizado, Mozilla y otros proveedores de navegadores han comenzado a implementar algunas partes. Los artículos enlazados aquí describen las partes de HTML5 que ya son compatibles con el motor  Gecko de Mozilla, usado por Firefox y muchos otros productos. También se pueden encontrar referencias a artículos concretos de las versiones de Gecko y otros motores de navegador, y las características compatibles.</p>
+        <span> <a href="https://developer.mozilla.org/es/docs/HTML/HTML5" target="_blank">https://developer.mozilla.org/es/docs/HTML/HTML5</a> </span>
+    </div>
+</div>
+
+<div data-role="page" id="semantica">
+    <div data-role="header">
+        <h1>Semántica</h1>
+        <img src="img/semantics.png" alt="html5 semantico">
+        <a href="#home">Atrás</a>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview">
+            <li><a href="#Sdoctype">&lt;!DOCTYPE html&gt;</a></li>
+            <li><a href="#Sheader">&lt;header&gt;</a></li>
+            <li><a href="#Shgroup">&lt;hgroup&gt;</a></li>
+            <li><a href="#Snav">&lt;nav&gt;</a></li>
+            <li><a href="#Ssection">&lt;section&gt;</a></li>
+            <li><a href="#Sarticle">&lt;article&gt;</a></li>
+            <li><a href="#Saside">&lt;aside&gt;</a></li>
+            <li><a href="#Sfooter">&lt;footer&gt;</a></li>
+            <li><a href="#Svideo">&lt;video&gt;</a></li>
+            <li><a href="#Saudio">&lt;audio&gt;</a></li>
+            <li><a href="#Sinput">&lt;input&gt;</a></li>
+            <li><a href="#Scanvas">&lt;canvas&gt;</a></li>
+            <li><a href="#Ssvg">&lt;svg&gt;</a></li>
+        </ul>
+    </div>
+</div>
+<div data-role="page" id="Sdoctype">
+    <div data-role="header">
+        <h1>Semántica</h1>
+        <img src="img/semantics.png" alt="html5 semantico">
+        <a href="#semantica">Atrás</a>
+    </div><!-- /header -->
+    <div data-role="content">
+        <h2>&lt;!DOCTYPE html&gt;</h2>
+        <p>Para empezar a usar HTML5 lo único que tienes que hacer es colocar este DOCTYPE antes de la etiqueta <strong>&lt;html&gt;</strong></p>
+        <p>Es un DOCTYPE mucho más simplificado que XHTML (cuyas reglas siguen siendo usadas) y te permite usar todas las habilidades de HTML5 sin que nada de lo que ya tienes programado deje de funcionar.</p>
+        <p>Incluso, este doctype es lo único que requieres para hacer un documento en HTML5.  Si incluyes eso en un archivo .html, lo guardas (ocupará 15 bytes) y vas al validador de la W3C, te dirá que es un documento totalmente válido.  En HTML5 no se revisa ni siquiera si abriste o no un tag <strong>&lt;html&gt;</strong>, un tag <strong>&lt;head&gt;</strong>, etc.  Dejemos esto solo como una anécdota curiosa, aunque de poca utilidad, ya que no tiene sentido hacer un archivo solo con el doctype.</p>
+        <p>HTML5 es HTML, así que todos los tags que seguramente recuerdas: <strong>&lt;body&gt;</strong>, <strong>&lt;p&gt;</strong>, <strong>&lt;div&gt;</strong>, <strong>&lt;strong&gt;</strong>, <strong>&lt;input&gt;</strong> siguen funcionando como antes. Pero para implementar más semántica, se han incorporado muchas etiquetas nuevas.  Las principales etiquetas HTML5 nuevas no tienen una representación especial en pantalla. Todas se comportan como un <strong>&lt;div&gt;</strong> o un <strong>&lt;span&gt;</strong>. Pero cada una tiene un significado semántico superior a un simple div o span.</p>
+    </div><!-- /content -->
+</div>
+<div data-role="page" id="Sheader">
+    <div data-role="header">
+        <h1>Semántica</h1>
+        <img src="img/semantics.png" alt="html5 semantico">
+        <a href="#semantica">Atrás</a>
+    </div>
+    <div data-role="content">
+        <h2>&lt;header&gt;</h2>
+        <p>Representa un grupo de ayudas introductorias o de navegación. Puede contener algunos elementos de encabezado, pero también otros elementos como un logo, una sección que aglutine secciones de encabezados, una formulario de búsqueda o cosas parecidas.</p>
+    </div>
+</div>
+<div data-role="page" id="Shgroup">
+    <div data-role="header">
+        <h1>Semántica</h1>
+        <img src="img/semantics.png" alt="html5 semantico">
+        <a href="#semantica">Atrás</a>
+    </div>
+    <div data-role="content">
+        <h2>&lt;hgroup&gt;</h2>
+        <p>Muchos headers necesitan múltiples títulos, como un blog que tiene un titulo y un tagline explicando el blog. &lt;hgroup&gt; permite colocar un h1, h2 y h3 dentro del header sin afectar el SEO, permitiendo usar otro h1 en el sitio. A nivel SEO, recomendamos utilizar h1 una vez por sitio o el h1 pierde prioridad de acuerdo a muchos comentarios que ha hecho Google directamente.</p>
+        <p>Para efectos de desarrollo para FireFoxOS aunque las tecnicas de maquetación para un mejor ranking de SEO no es un valor pertinente, estas deben mantenerse ya que son consideradas como buenas practicas de Desarrollo para tecnologias Web</p>
+    </div>
+</div>
+<div data-role="page" id="Ssection">
+    <div data-role="header">
+        <h1>Semántica</h1>
+        <img src="img/semantics.png" alt="html5 semantico">
+        <a href="#semantica">Atrás</a>
+    </div>
+    <div data-role="content">
+        <h2>&lt;section&gt;</h2>
+        <p>Define un área de contenido única dentro del sitio. En un blog, sería la zona donde están todos los posts. En un vídeo de youtube, habría un section para el vídeo, uno para los datos del vídeo, otro para la zona de comentarios.</p>
+    </div>
+</div>
+<div data-role="page" id="Snav">
+    <div data-role="header">
+        <h1>Semántica</h1>
+        <img src="img/semantics.png" alt="html5 semantico">
+        <a href="#semantica">Atrás</a>
+    </div>
+    <div data-role="content">
+        <h2>&lt;nav&gt;</h2>
+        <p>Igual que <strong>&lt;header&gt;</strong>, <strong>&lt;nav&gt;</strong> está diseñado para que ahí coloques la botonera de navegación principal. Puedes colocar cualquier etiqueta dentro, aunque se recomienda es usar listas <strong>&lt;ul&gt;</strong>. </p>
+    </div>
+</div>
+<div data-role="page" id="Sarticle">
+    <div data-role="header">
+        <h1>Semántica</h1>
+        <img src="img/semantics.png" alt="html5 semantico">
+        <a href="#semantica">Atrás</a>
+    </div>
+    <div data-role="content">
+        <h2>&lt;article&gt;</h2>
+        <p>representa una composición auto-contenida en un documento, página, una aplicación o en el sitio, que se destina a distribuir de forma independiente o reutilizable, por ejemplo, en la sindicación. Podría ser un mensaje en un foro, un artículo de una revista o un periódico, una entrada de blog, un comentario de un usuario, un widget interactivo o gadget, o cualquier otro elemento independiente del contenido.</p>
+    </div>
+</div>
+<div data-role="page" id="Saside">
+    <div data-role="header">
+        <h1>Semántica</h1>
+        <img src="img/semantics.png" alt="html5 semantico">
+        <a href="#semantica">Atrás</a>
+    </div>
+    <div data-role="content">
+        <h2>&lt;aside&gt;</h2>
+        <p>El Elemento HTML Aside (<strong>&lt;aside&gt;</strong>) representa una sección de una página que consiste en contenido que está tangencialmente relacionado con el contenido que le rodea, que podría ser considerado independiente de ese contenido. Estas secciones son a menudo representadas como barras laterales o como inserciones y contienen una explicación al margen como una definición de glosario, elementos relacionados indirectamente, como publicidad, la biografía del autor, o en aplicaciones web, la información de perfil o enlaces a blogs relacionados.</p>
+    </div>
+</div>
+<div data-role="page" id="Sfooter">
+    <div data-role="header">
+        <h1>Semántica</h1>
+        <img src="img/semantics.png" alt="html5 semantico">
+        <a href="#semantica">Atrás</a>
+    </div>
+    <div data-role="content">
+        <h2>&lt;footer&gt;</h2>
+        <p>representa un pie de página para el contenido de sección más cercano o el elemento  raíz de sección (p.e, su ancestro mas cercano &lt;article&gt;, &lt;aside&gt;, &lt;nav&gt;, &lt;section&gt;,&lt;blockquote&gt;, &lt;body&gt;, &lt;details&gt;, &lt;fieldset&gt;, &lt;figure&gt;, &lt;td&gt;). Un pie de página típicamente contiene información acerca de el autor de la sección, datos de derechos de autor o enlaces a documentos relacionados.</p>
+    </div>
+</div>
+<div data-role="page" id="Svideo">
+    <div data-role="header">
+        <h1>Semántica</h1>
+        <img src="img/semantics.png" alt="html5 semantico">
+        <a href="#semantica">Atrás</a>
+    </div>
+    <div data-role="content">
+        <h2>&lt;video&gt;</h2>
+        <p>Inserta video sin necesidad de plugins. Es muy fácil usarla, pero cada navegador soporta codecs diferentes de vídeo, lo que hace necesario recodificar un video en múltiples codecs.</p>
+        <p>En el caso de Mozilla Firefox en su version 20.0.1 (la mas raciente al momento de lanzar esta aplicación) tiene un completor soporte de <strong>Theora</strong>, <strong>H.264</strong> y <strong>VP8(WebM)</strong>  </p>
+    </div>
+</div>
+<div data-role="page" id="Saudio">
+    <div data-role="header">
+        <h1>Semántica</h1>
+        <img src="img/semantics.png" alt="html5 semantico">
+        <a href="#semantica">Atrás</a>
+    </div>
+    <div data-role="content">
+        <h2>&lt;audio&gt;</h2>
+        <p>Esta nueva etiqueta permite el uso de diferentes formatos de archivo puesto que los formatos que soportan los diferentes navegadores no son parte del estándar sino que depende de la implementación de cada fabricante. Puedes guiarte con esta tabla para comprobar que formatos soportan los navegadores más usados de forma nativa</p>
+        <p>Mozilla Firefox soporta nativamente los siguientes formatos: <strong>Ogg Vorbis</strong>, <strong>WAV PCM</strong>, <strong>MP3</strong> (desde v21.0 solo desde Microsft Windows), <strong>AAC</strong> (desde v21.0 solo desde Microsft Windows), <strong>WebM Vorbis</strong>, <strong>Ogg Opus</strong></p>
+    </div>
+</div>
+<div data-role="page" id="Sinput">
+    <div data-role="header">
+        <h1>Semántica</h1>
+        <img src="img/semantics.png" alt="html5 semantico">
+        <a href="#semantica">Atrás</a>
+    </div>
+    <div data-role="content">
+        <h2>&lt;input&gt;</h2>
+        <p>Input ya existía como la etiqueta para insertar cajas de texto y botones. Ahora es más poderosa, con la capacidad de insertar cajas tipo "email" que se autovalidan, calendarios tipo "date", sliders, números, entre otras. Los formularios soliamos modificarlos y regularlos con mucho javascript y ahora desde el mismo HTML5 hacemos todo esto.</p>
+    </div>
+</div>
+<div data-role="page" id="Scanvas">
+    <div data-role="header">
+        <h1>Semántica</h1>
+        <img src="img/semantics.png" alt="html5 semantico">
+        <a href="#semantica">Atrás</a>
+    </div>
+    <div data-role="content">
+        <h2>&lt;canvas&gt;</h2>
+        <p>Un área de dibujo vectorial y de bitmaps con Javascript. Es un API de dibujo entero para Javascript.  Mucha mágia HTML5 se está produciendo en esta etiqueta.  </p>
+    </div>
+</div>
+<div data-role="page" id="Ssvg">
+    <div data-role="header">
+        <h1>Semántica</h1>
+        <img src="img/semantics.png" alt="html5 semantico">
+        <a href="#semantica">Atrás</a>
+    </div>
+    <div data-role="content">
+        <h2>&lt;svg&gt;</h2>
+        <p>Una etiqueta, igual que &lt;img&gt;, para insertar dibujos y animaciones vectoriales al estilo de Flash. Todo basado en el estándar abierto SVG (Scalable Vector Graphics), derivado de XML.</p>
+    </div>
+</div>
+
+<div data-role="page" id="Dstorage">
+    <div data-role="header">
+        <h1>DOM Storage</h1>
+        <img src="img/storage.png" alt="offline and storage">
+        <a href="#home">Atrás</a>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview">
+            <li><a href="#Ldefinicion">Definición</a></li>
+            <li><a href="#Lsession">Session Storage</a></li>
+            <li><a href="#Lstorage">Local Storage</a></li>
+        </ul>
+     </div>
+</div>
+<div data-role="page" id="Ldefinicion">
+    <div data-role="header">
+        <h1>DOM Storage</h1>
+        <img src="img/storage.png" alt="offline and storage">
+        <a href="#Dstorage">Atrás</a>
+    </div>
+    <div data-role="content">
+        <h2>Definición</h2>
+        <p>El mecanismo de almacenamiento DOM es el medio a través del cual pares de clave/valor pueden ser almacenadas de forma segura para ser recuperadas y utilizadas más adelante. La meta de este añadido es suministrar un método exhaustivo a través del cual puedan construirse aplicaciones interactivas (incluyendo características avanzadas tales como ser capaces de trabajar "sin conexión" durante largos períodos de tiempo).</p>
+        <p>El almacenamiento DOM es útil ya que ningún navegador dispone de buenos métodos para conservar cantidades razonables de datos durante un periodo de tiempo. Las cookies de los navegadores tienen una capacidad limitada y no implementan una forma de organizar datos persistentes y otros métodos (tales como almacenamiento local de Flash) necesitan un plugin externo.</p>
+    </div>
+</div>
+<div data-role="page" id="Lsession">
+    <div data-role="header">
+        <h1>DOM Storage</h1>
+        <img src="img/storage.png" alt="offline and storage">
+        <a href="#Dstorage">Atrás</a>
+    </div>
+    <div data-role="content">
+        <h2>Session Storage</h2>
+        <p>Este es un objeto global (<strong>sessionStorage</strong>) que mantiene un área de almacenamiento que está disponible durante la sesión de página. Una sesión de página existe mientras el navegador esté abierto y sobrevive a recargas o restauraciones de páginas. Abrir una página en una nueva pestaña o en una ventana provoca que se cree una nueva sesión.</p>
+        <p>El objeto sessionStorage es más usado para manejar datos temporales que deberían ser guardados y recuperados si el navegador es recargado accidentalmente.</p>
+     </div>
+</div>
+<div data-role="page" id="Lstorage">
+    <div data-role="header">
+        <h1>DOM Storage</h1>
+        <img src="img/storage.png" alt="offline and storage">
+        <a href="#Dstorage">Atrás</a>
+    </div>
+    <div data-role="content">
+        <h2>Local Storage</h2>
+        <p>Nos permite almacenar hasta 5MB del lado del cliente por dominio, esto nos permite ahora hacer aplicaciones mas robustas y con mas posibilidades. ¿Recuerdan las Cookies?, estas no ofrecen algo parecido, pero con el limite de 100kb, las Cookies siempre fueron algo muy poco fiable.</p>
+        <p>En el Local Storage podemos guardar cualquier tipo de información, desde texto hasta multimedia, siempre y cuando quepa en los 5MB. Si se preguntan, ¿Es una nueva tecnologia y solo 5MB?, esto es por la seguridad del usuario, seria algo inseguro mas espacio</p>
      </div>
 </div>
 
-<div data-role="page" id="svg">
-	<div data-role="header">
-    <h1>SVG</h1>
-    <a href="#home">Atrás</a>
+<div data-role="page" id="Conectividad">
+    <div data-role="header">
+        <h1>Conectividad</h1>
+            <img src="img/connectivity.png" alt="Connectivity">
+        <a href="#home">Atrás</a>
     </div>
-    
     <div data-role="content">
-    <p>El SVG......</p>
-    </div>
+        <h2></h2>
+     </div>
 </div>
 
-<div data-role="page" id="geolocation">
-	<div data-role="header">
-    <h1>Geolocalización</h1>
-     <a href="#home">Atrás</a>
+<div data-role="page" id="Multimedia">
+    <div data-role="header">
+        <h1>Multimedia</h1>
+        <img src="img/multimedia.png" alt="Multimedia">
+        <a href="#home">Atrás</a>
     </div>
-   
     <div data-role="content">
-    <p>La Geolocalización.....</p>
-    </div>
+        <h2></h2>
+     </div>
 </div>
 
-<div data-role="page" id="webStorage">
-	<div data-role="header">
-    <h1>Almacenamiento Web</h1>
-     <a href="#home">Atrás</a>
+<div data-role="page" id="Graphics">
+    <div data-role="header">
+        <h1>Graficos 3D y <br> Efectos</h1>
+        <img src="img/graphics.png" alt="Graficos 3D y Efectos">
+        <a href="#home">Atrás</a>
     </div>
-   
     <div data-role="content">
-    <p>Almacenamiento Web.....</p>
-    </div>
+        <h2></h2>
+     </div>
 </div>
 
-<div data-role="page" id="webWorkers">
-	<div data-role="header">
-		<h1>Web Worker</h1>
-		<a href="#home">Atrás</a>
-	</div><!-- /header -->
-	<div data-role="content">	
-		<p>Cuando ejecutamos scripts en una página HTML,</p>		
-	</div><!-- /content -->
-</div><!-- /page -->
+<div data-role="page" id="Performance">
+    <div data-role="header">
+        <h1>Performance e <br> Integración</h1>
+        <img src="img/performance.png" alt="Performance e Integración">
+        <a href="#home">Atrás</a>
+    </div>
+    <div data-role="content">
+        <h2></h2>
+     </div>
+</div>
 
-<div data-role="page" id="sse">
-	<div data-role="header">
-		<h1>SSE</h1>
-		<a href="#home">Atrás</a>
-	</div><!-- /header -->
-	<div data-role="content">	
-		<p>Server-sent event</p>		
-	</div><!-- /content -->
-</div><!-- /page -->
+<div data-role="page" id="Dispositivos">
+    <div data-role="header">
+        <h1>Dispositivos</h1>
+        <img src="img/device.png" alt="Dispositivos">
+        <a href="#home">Atrás</a>
+    </div>
+    <div data-role="content">
+        <h2></h2>
+     </div>
+</div>
+
+<div data-role="page" id="Css3">
+    <div data-role="header">
+        <h1>CSS 3</h1>
+        <img src="img/css3.png" alt="Css 3">
+        <a href="#home">Atrás</a>
+    </div>
+    <div data-role="content">
+        <h2></h2>
+     </div>
+</div>
+
 
 <script data-main="js/app" src="js/require-jquery.js"></script>
 
