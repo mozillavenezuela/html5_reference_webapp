@@ -9,8 +9,8 @@
     "128": "/img/icons/mortar-128.png"
   },
   "developer": {
-    "name": "Droid2Fox",
-    "url": "https://github.com/Droid2Fox/html_Reference"
+    "name": "Maedca",
+    "url": "https://github.com/maedca/html_Reference"
   },
   "installs_allowed_from": ["*"],
   "orientation": ["portrait"],
@@ -19,13 +19,13 @@
     "es": {
       "description": "HTML Reference",
       "developer": {
-        "url": "https://github.com/Droid2Fox/html_Reference"
+        "url": "https://github.com/maedca/html_Reference"
       }
     },
     "en": {
       "description": "HTML Reference",
       "developer": {
-        "url": "https://github.com/Droid2Fox/html_Reference"
+        "url": "https://github.com/maedca/html_Reference"
       }
     }
   },
